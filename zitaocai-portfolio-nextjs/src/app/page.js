@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Providers from "./components/Providers";
+import About from "./components/About";
 
 const Home = () => {
   return (
@@ -11,9 +12,9 @@ const Home = () => {
         <Navbar />
         <div className="container mt-24 mx-auto px-12 py-4">
           <Header />
-          {/* <AchievementsSection />
-        <AboutSection />
-        <ProjectsSection />
+          {/* <AchievementsSection /> */}
+        <About />
+        {/* <ProjectsSection />
         <EmailSection /> */}
         </div>
         <Footer />
