@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Providers from "./components/Providers";
 import About from "./components/About";
+import Project from "./components/Project";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
           <Header />
           {/* <AchievementsSection /> */}
         <About />
+        <Project />
         {/* <ProjectsSection />
         <EmailSection /> */}
         </div>
