@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { FiMoon } from "react-icons/fi";
-import { BsSun } from "react-icons/bs";
+import { FaMoon } from "react-icons/fa";
+import { BsSun, BsSunFill } from "react-icons/bs";
 
 const Navbar = () => {
   const [mounted, setMounted] = useState(false);
@@ -37,11 +38,25 @@ const Navbar = () => {
           <Link href="#">Contact</Link>
         </li>
       </ul>
-      {theme === "dark" ? (
-        <BsSun size={25} cursor="pointer" onClick={() => setTheme("light")} />
-      ) : (
-        <FiMoon size={25} cursor="pointer" onClick={() => setTheme("dark")} />
-      )}
+      <div
+        className={`relative w-16 h-8 flex items-center ${
+          theme === "dark" ? "bg-gray-900" : "bg-teal-500"
+        } cursor-pointer rounded-full p-1`}
+        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      >
+        <FaMoon className="text-white" size={18} />
+        <div
+          className="absolute bg-white w-6 h-6 rounded-full shadow-md transform transition-transform duration-300"
+          style={theme === "dark" ? { left: "2px" } : { right: "2px" }}
+        ></div>
+        <BsSunFill className="ml-auto text-yellow-400" size={18} />
+
+        {/* {theme === "dark" ? (
+          <BsSun size={25} cursor="pointer" onClick={() => setTheme("light")} />
+        ) : (
+          <FiMoon size={25} cursor="pointer" onClick={() => setTheme("dark")} />
+        )} */}
+      </div>
     </div>
   );
 };
