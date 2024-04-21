@@ -54,10 +54,11 @@ const About = () => {
   };
 
   const textColor = theme === "dark" ? "bg-[#121212]" : "bg-white";
+  const bgColor = theme === "dark" ? "bg-[#121212]" : "bg-white";
 
   return (
     <section
-      className="${theme === 'dark' ? 'bg-black' : 'bg-white'} ${textColor} py-16 px-4"
+      className={`${bgColor} ${textColor} py-16 px-4`}
       id="about"
     >
       <div className="container mx-auto">
@@ -103,14 +104,12 @@ const About = () => {
                 selectTab={() => handleTabChange("education")}
                 active={tab === "education"}
               >
-                {" "}
                 Education{" "}
               </Tab>
               <Tab
                 selectTab={() => handleTabChange("courses")}
                 active={tab === "courses"}
               >
-                {" "}
                 Courses{" "}
               </Tab>
               <Tab
@@ -120,7 +119,7 @@ const About = () => {
                 Hobbies{" "}
               </Tab>
             </div>
-            <div className="mt-8">
+            <div className="mt-4">
               {TAB_DATA.find((t) => t.id === tab).content}
             </div>
           </div>

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useRef } from "react";
+import { useTheme } from "next-themes";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
@@ -12,7 +13,7 @@ const projectsData = [
     image: "/assets/1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/CztCFfSNI/GiftGuru-zitao",
-    previewUrl: "giftguru-f7599.web.app",
+    previewUrl: "https://giftguru-f7599.web.app",
   },
   {
     id: 2,
@@ -30,23 +31,36 @@ const projectsData = [
     image: "/assets/3.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/CztCFfSNI/Voyage-zitao",
-    previewUrl: "https://voyage-f348c.web.app/home",
+    previewUrl: "#",
   },
   {
     id: 4,
     title: "Fitness Calendar",
     description: "Designed to inspire and motivate users to achieve their fitness goals through our personalized training plans, progress tracking, and reminder functions.",
-    image: "/assets/4.png",
+    image: "/assets/4.jpeg",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/CztCFfSNI/FitnessCalendar",
-    previewUrl: "https://github.com/CztCFfSNI/FitnessCalendar",
+    previewUrl: "#",
+  },
+  {
+    id: 5,
+    title: "Random Quote Generator",
+    description: "A generator that can generate 50 quotes randomly.",
+    image: "https://cdn.glitch.global/94925d38-48db-4f75-b71d-8223b315b987/quote1.png?v=1695779890844",
+    tag: ["All", "Game"],
+    gitUrl: "#",
+    previewUrl: "https://zitaocai-random-quotes-generator.glitch.me/",
   },
 ];
 
-const ProjectsSection = () => {
+const Project = () => {
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+
+  const { theme, setTheme } = useTheme();
+
+  const classColor = theme === "dark" ? "text-white" : "text-black";
 
   const handleTagChange = (newTag) => {
     setTag(newTag);
@@ -63,10 +77,10 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+      <h2 className={`text-center text-4xl font-bold ${classColor} mt-4 mb-8 md:mb-12`}>
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className={`${classColor} flex flex-row justify-center items-center gap-2 py-6`}>
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -81,6 +95,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Game"
+          isSelected={tag === "Game"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -107,4 +126,4 @@ const ProjectsSection = () => {
   );
 };
 
-export default ProjectsSection;
+export default Project;

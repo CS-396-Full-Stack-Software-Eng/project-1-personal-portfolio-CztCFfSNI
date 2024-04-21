@@ -14,17 +14,25 @@ const Tab = ({ active, selectTab, children }) => {
       ? active
         ? "text-white"
         : "text-[#ADB7BE]"
-      : "text-red";
+      : active
+      ? "text-black"
+      : "text-slate-500";
+
+  const buttonHover =
+    theme === "dark" ? "hover:text-white" : "hover:text-black";
+
+    const lineColor =
+    theme === "dark" ? "bg-slate-200" : "bg-slate-600";
 
   return (
     <button onClick={selectTab}>
-      <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
+      <p className={`mr-3 font-semibold ${buttonHover} ${buttonClasses}`}>
         {children}
       </p>
       <motion.div
         animate={active ? "active" : "default"}
         variants={variants}
-        className="h-1 bg-primary-500 mt-2 mr-3"
+        className={`h-1 ${lineColor} mt-2 mr-3`}
       ></motion.div>
     </button>
   );

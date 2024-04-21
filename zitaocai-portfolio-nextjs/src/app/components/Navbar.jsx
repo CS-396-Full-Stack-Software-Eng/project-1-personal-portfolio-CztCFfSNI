@@ -40,35 +40,42 @@ const Navbar = () => {
     return null;
   }
 
-  const navbarBgColor = theme === "dark" ? 'bg-[#121212]' : 'bg-white';
+  // const logoColor1 = theme === "dark" ? 'text-pink-300' : 'text-pink-500';
+  // const logoColor2 = theme === "dark" ? 'text-blue-300' : 'text-blue-400';
+  const navbarBgColor = theme === "dark" ? "bg-[#121212]" : "bg-white";
+  const bottonColor =
+    theme === "dark"
+      ? "border-slate-200 text-slate-400 hover:text-white hover:border-white"
+      : "border-slate-700 text-slate-400 hover:text-black hover:border-black";
 
   return (
-    <nav className={`fixed mx-auto top-0 left-0 right-0 z-10 ${navbarBgColor} bg-opacity-100`}>
+    <nav
+      className={`fixed mx-auto top-0 left-0 right-0 z-10 ${navbarBgColor} bg-opacity-100`}
+    >
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <div className="font-bold text-pink-300 text-3xl">
-          Port<span className="text-blue-300">folio</span>
+        <div className={`font-bold text-3xl`}>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-700">
+            Portfolio
+          </span>
         </div>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className={`flex items-center px-3 py-2 border rounded ${bottonColor}`}
             >
               <Bars3Icon className="h-5 w-5" />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className={`flex items-center px-3 py-2 border rounded ${bottonColor}`}
             >
               <XMarkIcon className="h-5 w-5" />
             </button>
           )}
         </div>
-        <div
-          className="menu hidden md:block md:w-auto"
-          id="navbar"
-        >
+        <div className="menu hidden md:block md:w-auto" id="navbar">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0 mr-6">
             {navLinks.map((link, index) =>
               index === navLinks.length - 1 ? (
