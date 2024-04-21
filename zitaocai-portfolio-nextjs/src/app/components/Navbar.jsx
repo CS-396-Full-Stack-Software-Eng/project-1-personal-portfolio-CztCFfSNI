@@ -16,7 +16,7 @@ const navLinks = [
     path: "#about",
   },
   {
-    title: "Tech",
+    title: "Skills",
     path: "#tech",
   },
   {
@@ -31,22 +31,25 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
-
-  if (!mounted) {
-    return null;
-  }
 
   // const logoColor1 = theme === "dark" ? 'text-pink-300' : 'text-pink-500';
   // const logoColor2 = theme === "dark" ? 'text-blue-300' : 'text-blue-400';
-  const navbarBgColor = theme === "dark" ? "bg-[#121212]" : "bg-white";
+  let navbarBgColor = theme !== "dark" ? "bg-white" : scrolled ? "bg-[#121212]" : "";
   const bottonColor =
     theme === "dark"
       ? "border-slate-200 text-slate-400 hover:text-white hover:border-white"

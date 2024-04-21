@@ -6,7 +6,7 @@ const ProjectTag = ({ name, onClick, isSelected }) => {
 
   const classColorSelected =
     theme === "dark"
-      ? "text-white border-purple-500"
+      ? "text-purple-500 border-purple-500"
       : "text-slate-700 border-slate-700";
       
   const classColorUnSelected =

@@ -30,7 +30,7 @@ const Email = () => {
     };
 
     const response = await fetch(endpoint, options);
-    const resData = await response.json();
+    // const resData = await response.json();
 
     if (response.status === 200) {
       console.log("Message sent.");
@@ -44,7 +44,7 @@ const Email = () => {
   const iconSize =
     theme === "dark" ? { width: 40, height: 40 } : { width: 33, height: 33 };
   const titleColor = theme === "dark" ? "text-white" : "text-black";
-  const textColor = theme === "dark" ? "text-slate-200" : "text-slate-700";
+  const textColor = theme === "dark" ? "text-slate-400" : "text-slate-700";
   const responseColor =
     theme === "dark"
       ? "bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-slate-200"
@@ -64,8 +64,8 @@ const Email = () => {
         <p className={`${textColor} mb-4 max-w-md`}>
           {" "}
           I&apos;m currently seeking a 2025 full-time SDE opportunity. My inbox
-          is always open, so whether you have a question or just want to say
-          what'up, feel free to reach out!
+          is always open, so whether you have a question or just wanna say
+          hi, always feel free to reach out!
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/CztCFfSNI">
@@ -89,7 +89,7 @@ const Email = () => {
       <div>
         {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
-            Email is sent successfully!
+            Your email is sent successfully!
           </p>
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>

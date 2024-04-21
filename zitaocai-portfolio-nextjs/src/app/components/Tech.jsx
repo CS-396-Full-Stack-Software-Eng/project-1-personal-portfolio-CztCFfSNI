@@ -82,7 +82,7 @@ const Tech = () => {
                   src={"/assets/developer.png"}
                   width={45}
                   height={45}
-                  alt="brainwave"
+                  alt="developer"
                 />
               </div>
             </div>

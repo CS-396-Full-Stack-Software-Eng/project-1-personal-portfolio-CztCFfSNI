@@ -6,20 +6,24 @@ import Providers from "./components/Providers";
 import About from "./components/About";
 import Project from "./components/Project";
 import Email from "./components/Email";
-import Tech from "./components/Tech.jsx";
+import Tech from "./components/Tech";
+import { useTheme } from "next-themes";
 
 const Home = () => {
+  // const { theme } = useTheme();
+
   return (
-    <main className="flex min-h-screen flex-col ${theme === 'dark' ? 'bg-black' : 'bg-white'}">
+    <main className={`flex min-h-screen flex-col `}>
       <Providers>
-        <Navbar />
-        <div className="container mt-24 mx-auto px-12 py-4">
+        <div className="relative">
+          <Navbar />
           <Header />
-          {/* <AchievementsSection /> */}
-        <About />
-        <Tech />
-        <Project />
-        <Email />
+        </div>
+        <div className="container mt-24 mx-auto px-12 py-4">
+          <About />
+          <Tech />
+          <Project />
+          <Email />
         </div>
         <Footer />
       </Providers>
