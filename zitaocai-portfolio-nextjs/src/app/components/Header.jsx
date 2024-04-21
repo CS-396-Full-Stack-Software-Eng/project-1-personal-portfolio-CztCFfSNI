@@ -28,6 +28,8 @@ const Header = () => {
               sequence={[
                 "Zitao Cai",
                 1000,
+                "A Graduate Student",
+                1000,
                 "A Software Engineer",
                 1000,
                 "A Full-stack Developer",

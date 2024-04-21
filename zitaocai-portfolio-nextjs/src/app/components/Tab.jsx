@@ -1,5 +1,6 @@
 import React, { useTransition, useState } from "react";
 import { useTheme } from "next-themes";
+import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
 const variants = {
@@ -21,8 +22,7 @@ const Tab = ({ active, selectTab, children }) => {
   const buttonHover =
     theme === "dark" ? "hover:text-white" : "hover:text-black";
 
-    const lineColor =
-    theme === "dark" ? "bg-slate-200" : "bg-slate-600";
+  const lineColor = theme === "dark" ? "bg-purple-500" : "bg-slate-800";
 
   return (
     <button onClick={selectTab}>

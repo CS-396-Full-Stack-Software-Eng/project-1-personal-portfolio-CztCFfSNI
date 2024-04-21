@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Providers from "./components/Providers";
 import About from "./components/About";
 import Project from "./components/Project";
+import Email from "./components/Email";
 
 const Home = () => {
   return (
@@ -16,8 +17,7 @@ const Home = () => {
           {/* <AchievementsSection /> */}
         <About />
         <Project />
-        {/* <ProjectsSection />
-        <EmailSection /> */}
+        <Email />
         </div>
         <Footer />
       </Providers>

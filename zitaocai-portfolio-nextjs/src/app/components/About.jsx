@@ -70,7 +70,7 @@ const About = () => {
               width={200}
               height={200}
               layout="responsive" 
-              className="w-full h-auto"
+              className="w-auto h-auto"
             />
             <br />
             <Image
@@ -79,7 +79,7 @@ const About = () => {
               width={200}
               height={200}
               layout="responsive" 
-              className="w-full h-auto"
+              className="w-auto h-auto"
             />
           </div>
           <div className="flex flex-col justify-center">
