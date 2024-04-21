@@ -29,6 +29,18 @@ const TAB_DATA = [
     ),
   },
   {
+    title: "Research",
+    id: "research",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Towards Automatic Penetration Testing with LLMs</li>
+        <li>Measurement Study of Super Mini-Apps</li>
+        <li>An Integrated Data Cyberinfrastructure</li>
+        <li>...</li>
+      </ul>
+    ),
+  },
+  {
     title: "Hobbies",
     id: "hobbies",
     content: (
@@ -111,6 +123,12 @@ const About = () => {
                 active={tab === "courses"}
               >
                 Courses{" "}
+              </Tab>
+              <Tab
+                selectTab={() => handleTabChange("research")}
+                active={tab === "research"}
+              >
+                Research{" "}
               </Tab>
               <Tab
                 selectTab={() => handleTabChange("hobbies")}

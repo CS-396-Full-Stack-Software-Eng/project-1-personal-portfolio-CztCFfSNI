@@ -6,6 +6,7 @@ import Providers from "./components/Providers";
 import About from "./components/About";
 import Project from "./components/Project";
 import Email from "./components/Email";
+import Tech from "./components/Tech.jsx";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
           <Header />
           {/* <AchievementsSection /> */}
         <About />
+        <Tech />
         <Project />
         <Email />
         </div>
