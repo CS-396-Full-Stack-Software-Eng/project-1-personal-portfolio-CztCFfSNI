@@ -64,7 +64,7 @@ const Navbar = () => {
         <div className={`font-bold text-3xl`}>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-700">
             <Link href={"/"}>
-              Portfolio
+              ZitaoCai
             </Link>
           </span>
         </div>
