@@ -29,11 +29,14 @@ const Home = () => {
   };
 
   return (
-    <main className={`flex min-h-screen flex-col `} style={backgroundStyle}>
+    <main className={`flex min-h-screen flex-col `} 
+    // style={backgroundStyle}
+    >
       <Providers>
        <div className="relative w-full">
           <Navbar />
-          {theme === "dark" ? <DarkMode /> : <LightMode />}
+          <Main />
+          {/* {theme === "dark" ? <DarkMode /> : <LightMode />} */}
         </div>
       </Providers>
     </main>

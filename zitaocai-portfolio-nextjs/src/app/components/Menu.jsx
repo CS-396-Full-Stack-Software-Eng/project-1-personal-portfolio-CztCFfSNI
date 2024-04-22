@@ -11,8 +11,11 @@ import MenuOverlay from "./Menu";
 
 const Menu = ({ links }) => {
   const { theme, setTheme } = useTheme();
+
+  const backgroundColor = theme === "dark" ? "bg-[#121212]" : "bg-white";
+
   return (
-    <ul className="flex flex-col py-4 items-center">
+    <ul className={`flex flex-col py-4 items-center ${backgroundColor}`}>
       {links.map((link, index) =>
         index === links.length - 1 ? (
           <div
