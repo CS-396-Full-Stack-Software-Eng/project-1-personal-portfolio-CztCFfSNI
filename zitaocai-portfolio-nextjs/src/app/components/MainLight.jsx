@@ -35,12 +35,6 @@ const Header = () => {
                     1000,
                     "A BSCS @ OSU",
                     1000,
-                    "A Software Engineer",
-                    1000,
-                    "A Full-stack Developer",
-                    1000,
-                    "A Mobile Developer",
-                    1000,
                   ]}
                   wrapper="span"
                   speed={50}
@@ -52,7 +46,7 @@ const Header = () => {
             <p
               className={`${descriptionColor} text-base sm:text-lg mb-6 lg:text-xl`}
             >
-              An unexamined life is not worth living. — Socrates
+              Honesty and diligence should be your eternal mates. — Franklin
             </p>
             {/* <div>
             <Link
@@ -73,7 +67,7 @@ const Header = () => {
           >
             <div className="flex-1 flex justify-end">
               <Image
-                src="/assets/osu_graduate.JPG"
+                src="/assets/me2.jpeg"
                 alt="personal images"
                 width={350}
                 height={350}

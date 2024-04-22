@@ -67,13 +67,13 @@ const Tech = () => {
   const classColor = theme === "dark" ? "text-white" : "text-black";
 
   return (
-    <section id="tech" className={`py-12 px-4`}>
+    <section id="tech" className={`px-4`}>
       <h2
         className={`text-center text-4xl font-bold ${classColor} mt-4 mb-8 md:mb-12`}
       >
         Tech Stack
       </h2>
-      <div className="lg:ml-auto xl:w-[38rem] mt-4">
+      <div className="mx-auto xl:w-[38rem] mt-4">
         <div className="relative left-1/2 flex w-[22rem] aspect-square rounded-full -translate-x-1/2 scale:75 md:scale-100">
           <div className="flex w-60 aspect-square m-auto rounded-full">
             <div className="w-[6rem] aspect-square m-auto rounded-full">

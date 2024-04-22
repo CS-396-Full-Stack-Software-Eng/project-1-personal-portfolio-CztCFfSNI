@@ -3,6 +3,8 @@ import React, { useTransition, useState } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Tab from "./Tab";
+import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 const TAB_DATA = [
   {
@@ -10,8 +12,32 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>CIS & Mathematics @ tOSU</li>
-        <li>MSCS @ Northwestern</li>
+        <li>
+          <div className="flex flex-col items-start">
+            <span>CIS & Mathematics @ tOSU</span>
+            <Image
+              src="/assets/osu.svg"
+              alt="Ohio State University Logo"
+              width={50}
+              height={50}
+              layout="responsive"
+              className="max-w-[100px] max-h-[100px] w-auto h-auto"
+            />
+          </div>
+        </li>
+        <li>
+          <div className="flex flex-col items-start">
+            <span>MSCS @ Northwestern</span>
+            <Image
+              src="/assets/nu.svg"
+              alt="Northwestern University Logo"
+              width={50}
+              height={50}
+              layout="responsive"
+              className="max-w-[100px] max-h-[100px] w-auto h-auto"
+            />
+          </div>
+        </li>
       </ul>
     ),
   },
@@ -70,30 +96,18 @@ const About = () => {
 
   return (
     <section
-      className={`${bgColor} ${textColor} py-16 px-4`}
-      id="about"
+      className={`${bgColor} ${textColor}`}
+      // id="about"
     >
-      <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row md:items-start">
-          <div className="flex flex-col mb-8 md:mb-0 md:mr-8">
-            <Image
-              src="/assets/osu.svg"
-              alt="Ohio State University Logo"
-              width={200}
-              height={200}
-              layout="responsive" 
-              className="w-auto h-auto"
-            />
-            <br />
-            <Image
-              src="/assets/nu.svg"
-              alt="Northwestern University Logo"
-              width={200}
-              height={200}
-              layout="responsive" 
-              className="w-auto h-auto"
-            />
-          </div>
+      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+        <Image
+          src="/assets/osu_graduate.JPG"
+          alt="personal images"
+          width={500}
+          height={500}
+          className="rounded-3xl"
+        />
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <div className="flex flex-col justify-center">
             <h2 className="text-4xl font-bold mb-4">About Me</h2>
             <p className="text-base lg:text-lg">
@@ -103,9 +117,9 @@ const About = () => {
               on both software development and machine learning.
               <br />
               💻 🧑‍💻 My passion lies in crafting software solutions that push the
-              boundaries of what's possible, and I am continually seeking
+              boundaries of what is possible, and I am continually seeking
               opportunities to grow, contribute, and learn in the field of
-              software engineering.
+              software engineering and development.
               <br />
               📷 🎬 I have a keen interest in sports and photography.
               Additionally, I'm a movie enthusiast, always eager to explore new

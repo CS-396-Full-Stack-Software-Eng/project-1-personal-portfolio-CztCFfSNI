@@ -16,24 +16,34 @@ const Header = () => {
     <section>
       <div className="container mt-24 mx-auto px-12 py-4">
         <div className="grid grid-cols-1 sm:grid-cols-12">
+        <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="col-span-4 place-self-center mt-4 lg:mt-0"
+          >
+            <div className="flex-1 flex justify-end">
+              <Image
+                src="/assets/me1.jpeg"
+                alt="personal images"
+                width={350}
+                height={350}
+                className="rounded-3xl"
+              />
+            </div>
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
+            className="col-span-8 place-self-center text-center sm:text-right justify-self-end"
           >
             <h1 className="text-purple-600 mb-3 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-700">
-                Hi, I&apos;m <br />
+                What's&apos;up! This is <br />
                 <TypeAnimation
                   sequence={[
                     "Zitao Cai",
-                    1000,
-                    "A Graduate Student",
-                    1000,
-                    "A MSCS @ Northwestern",
-                    1000,
-                    "A BSCS @ OSU",
                     1000,
                     "A Software Engineer",
                     1000,
@@ -65,7 +75,7 @@ const Header = () => {
             </Link>
           </div> */}
           </motion.div>
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -73,14 +83,14 @@ const Header = () => {
           >
             <div className="flex-1 flex justify-end">
               <Image
-                src="/assets/osu_graduate.JPG"
+                src="/assets/me1.jpeg"
                 alt="personal images"
                 width={350}
                 height={350}
                 className="rounded-3xl"
               />
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>

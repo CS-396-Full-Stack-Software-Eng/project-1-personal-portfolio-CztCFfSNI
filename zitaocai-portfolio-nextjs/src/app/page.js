@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -7,25 +8,33 @@ import About from "./components/About";
 import Project from "./components/Project";
 import Email from "./components/Email";
 import Tech from "./components/Tech";
+import Main from "./main/page";
+import LightMode from "./components/MainLight";
+import DarkMode from "./components/MainDark";
 import { useTheme } from "next-themes";
 
 const Home = () => {
-  // const { theme } = useTheme();
+  const { theme } = useTheme(); 
+  
+  let backgroundStyle = theme === "dark" ? {
+    backgroundImage: "url('/assets/Header.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center top",
+    backgroundRepeat: "no-repeat",
+  } : {
+    backgroundImage: "url('/assets/light.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center top",
+    backgroundRepeat: "no-repeat",
+  };
 
   return (
-    <main className={`flex min-h-screen flex-col `}>
+    <main className={`flex min-h-screen flex-col `} style={backgroundStyle}>
       <Providers>
-        <div className="relative">
+       <div className="relative w-full">
           <Navbar />
-          <Header />
+          {theme === "dark" ? <DarkMode /> : <LightMode />}
         </div>
-        <div className="container mt-24 mx-auto px-12 py-4">
-          <About />
-          <Tech />
-          <Project />
-          <Email />
-        </div>
-        <Footer />
       </Providers>
     </main>
     // <div className="max-w-6xl mx-auto flex items-center py-12">
