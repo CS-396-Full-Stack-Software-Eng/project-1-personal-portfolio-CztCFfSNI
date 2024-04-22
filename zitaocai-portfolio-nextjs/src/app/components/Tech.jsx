@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useRef } from "react";
 import { useTheme } from "next-themes";
+import { motion } from "framer-motion";
 
 export const collabApps = [
   {
@@ -90,9 +91,12 @@ const Tech = () => {
 
           <ul>
             {collabApps.map((app, index) => (
-              <li
+              <motion.img
                 key={app.id}
-                className={`absolute w-12 h-12 flex justify-center items-center transform -translate-x-1/2 -translate-y-1/2`}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className={`absolute w-12 h-12`}
                 style={{
                   left: `calc(50% + ${
                     Math.sin((index * 2 * Math.PI) / collabApps.length) * 150
@@ -100,16 +104,14 @@ const Tech = () => {
                   top: `calc(50% - ${
                     Math.cos((index * 2 * Math.PI) / collabApps.length) * 150
                   }px)`,
+                  translateX: "-50%",
+                  translateY: "-50%",
                 }}
-              >
-                <img
-                  className="block"
-                  width={app.width}
-                  height={app.height}
-                  alt={app.title}
-                  src={app.icon}
-                />
-              </li>
+                src={app.icon}
+                alt={app.title}
+                width={app.width}
+                height={app.height}
+              />
             ))}
           </ul>
         </div>

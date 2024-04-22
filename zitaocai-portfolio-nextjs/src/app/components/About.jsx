@@ -95,18 +95,27 @@ const About = () => {
   const bgColor = theme === "dark" ? "bg-[#121212]" : "bg-white";
 
   return (
-    <section
-      className={`${bgColor} ${textColor}`}
-      // id="about"
-    >
+    <section className={`${bgColor} ${textColor}`}>
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image
-          src="/assets/osu_graduate.JPG"
-          alt="personal images"
-          width={500}
-          height={500}
-          className="rounded-3xl"
-        />
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Image
+            src="/assets/osu_graduate.JPG"
+            alt="personal images"
+            width={500}
+            height={500}
+            className="rounded-3xl"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="mt-4 md:mt-0 text-left flex flex-col h-full"
+        >
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <div className="flex flex-col justify-center">
             <h2 className="text-4xl font-bold mb-4">About Me</h2>
@@ -156,6 +165,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        </motion.div>
       </div>
     </section>
   );
