@@ -50,7 +50,10 @@ const Email = () => {
     theme === "dark"
       ? "bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-slate-200"
       : "bg-slate-100 border border-slate-200 placeholder-slate-400 text-slate-700";
-      const bottonColor = theme === "dark" ? "bg-purple-700 hover:bg-purple-800 text-white" : "bg-slate-100 hover:bg-slate-200 text-purple-600"
+  const bottonColor =
+    theme === "dark"
+      ? "bg-purple-700 hover:bg-purple-800 text-white"
+      : "bg-slate-100 hover:bg-slate-200 text-purple-600";
 
   return (
     <motion.section // Replace section with motion.section
@@ -68,8 +71,8 @@ const Email = () => {
         <p className={`${textColor} mb-4 max-w-md`}>
           {" "}
           I&apos;m currently seeking a 2025 full-time SDE opportunity. My inbox
-          is always open, so whether you have a question or just wanna say
-          hi, always feel free to reach out!
+          is always open, so whether you have a question or just wanna say hi,
+          always feel free to reach out!
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/CztCFfSNI">

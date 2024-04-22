@@ -11,7 +11,7 @@ const Main = () => {
 
   return (
     <main className={`flex min-h-screen flex-col `}>
-       <Providers>
+      <Providers>
         <div className="relative">
           <Navbar />
         </div>

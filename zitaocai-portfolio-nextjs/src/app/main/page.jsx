@@ -13,22 +13,25 @@ import { useTheme } from "next-themes";
 const Main = () => {
   const { theme, setTheme } = useTheme();
   const [backgroundStyle, setBackgroundStyle] = useState({});
-  
+
   useEffect(() => {
-    const newBackgroundStyle = theme === "dark" ? {
-      backgroundImage: "url('/assets/Header.jpg')",
-      backgroundSize: "cover",
-      backgroundPosition: "center top",
-      backgroundRepeat: "no-repeat",
-    } : {
-      backgroundImage: "url('/assets/light.jpg')",
-      backgroundSize: "cover",
-      backgroundPosition: "center top",
-      backgroundRepeat: "no-repeat",
-    };
-    
+    const newBackgroundStyle =
+      theme === "dark"
+        ? {
+            backgroundImage: "url('/assets/Header.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center top",
+            backgroundRepeat: "no-repeat",
+          }
+        : {
+            backgroundImage: "url('/assets/light.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center top",
+            backgroundRepeat: "no-repeat",
+          };
+
     setBackgroundStyle(newBackgroundStyle);
-  }, [theme]); 
+  }, [theme]);
 
   return (
     <main className={`flex min-h-screen flex-col `} style={backgroundStyle}>

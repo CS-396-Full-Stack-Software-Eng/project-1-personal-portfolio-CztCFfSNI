@@ -8,7 +8,7 @@ const ProjectTag = ({ name, onClick, isSelected }) => {
     theme === "dark"
       ? "text-purple-500 border-purple-500"
       : "text-slate-700 border-slate-700";
-      
+
   const classColorUnSelected =
     theme === "dark"
       ? "text-[#ADB7BE] border-slate-600 hover:border-purple-500"

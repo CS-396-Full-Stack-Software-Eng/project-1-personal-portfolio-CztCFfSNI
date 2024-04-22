@@ -116,55 +116,55 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="mt-4 md:mt-0 text-left flex flex-col h-full"
         >
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <div className="flex flex-col justify-center">
-            <h2 className="text-4xl font-bold mb-4">About Me</h2>
-            <p className="text-base lg:text-lg">
-              🎓 👨🏻‍🎓 Hi, This is Zitao from Northwestern. I hold a degree in
-              Computer and Information Science from the Ohio State University
-              and have furthered my studies at Northwestern University, focusing
-              on both software development and machine learning.
-              <br />
-              💻 🧑‍💻 My passion lies in crafting software solutions that push the
-              boundaries of what is possible, and I am continually seeking
-              opportunities to grow, contribute, and learn in the field of
-              software engineering and development.
-              <br />
-              📷 🎬 I have a keen interest in sports and photography.
-              Additionally, I'm a movie enthusiast, always eager to explore new
-              pictures.
-            </p>
-            <div className="flex flex-row justify-start mt-8">
-              <Tab
-                selectTab={() => handleTabChange("education")}
-                active={tab === "education"}
-              >
-                Education{" "}
-              </Tab>
-              <Tab
-                selectTab={() => handleTabChange("courses")}
-                active={tab === "courses"}
-              >
-                Courses{" "}
-              </Tab>
-              <Tab
-                selectTab={() => handleTabChange("research")}
-                active={tab === "research"}
-              >
-                Research{" "}
-              </Tab>
-              <Tab
-                selectTab={() => handleTabChange("hobbies")}
-                active={tab === "hobbies"}
-              >
-                Hobbies{" "}
-              </Tab>
-            </div>
-            <div className="mt-4">
-              {TAB_DATA.find((t) => t.id === tab).content}
+          <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+            <div className="flex flex-col justify-center">
+              <h2 className="text-4xl font-bold mb-4">About Me</h2>
+              <p className="text-base lg:text-lg">
+                🎓 👨🏻‍🎓 Hi, This is Zitao from Northwestern. I hold a degree in
+                Computer and Information Science from the Ohio State University
+                and have furthered my studies at Northwestern University,
+                focusing on both software development and machine learning.
+                <br />
+                💻 🧑‍💻 My passion lies in crafting software solutions that push
+                the boundaries of what is possible, and I am continually seeking
+                opportunities to grow, contribute, and learn in the field of
+                software engineering and development.
+                <br />
+                📷 🎬 I have a keen interest in sports and photography.
+                Additionally, I'm a movie enthusiast, always eager to explore
+                new pictures.
+              </p>
+              <div className="flex flex-row justify-start mt-8">
+                <Tab
+                  selectTab={() => handleTabChange("education")}
+                  active={tab === "education"}
+                >
+                  Education{" "}
+                </Tab>
+                <Tab
+                  selectTab={() => handleTabChange("courses")}
+                  active={tab === "courses"}
+                >
+                  Courses{" "}
+                </Tab>
+                <Tab
+                  selectTab={() => handleTabChange("research")}
+                  active={tab === "research"}
+                >
+                  Research{" "}
+                </Tab>
+                <Tab
+                  selectTab={() => handleTabChange("hobbies")}
+                  active={tab === "hobbies"}
+                >
+                  Hobbies{" "}
+                </Tab>
+              </div>
+              <div className="mt-4">
+                {TAB_DATA.find((t) => t.id === tab).content}
+              </div>
             </div>
           </div>
-        </div>
         </motion.div>
       </div>
     </section>

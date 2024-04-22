@@ -9,7 +9,8 @@ const projectsData = [
   {
     id: 1,
     title: "GiftGuru",
-    description: "By simply uploading photos of items your loved one enjoys, our AI technology analyzes their style and preferences to suggest the perfect, stress-free gift.",
+    description:
+      "By simply uploading photos of items your loved one enjoys, our AI technology analyzes their style and preferences to suggest the perfect, stress-free gift.",
     image: "/assets/1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/CztCFfSNI/GiftGuru-zitao",
@@ -18,7 +19,8 @@ const projectsData = [
   {
     id: 2,
     title: "Voyage",
-    description: "A personalized travel web app that recommends places based on preferences, enhancing journeys with organized and unforgettable experiences.",
+    description:
+      "A personalized travel web app that recommends places based on preferences, enhancing journeys with organized and unforgettable experiences.",
     image: "/assets/2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/CztCFfSNI/Voyage-zitao",
@@ -27,7 +29,8 @@ const projectsData = [
   {
     id: 3,
     title: "Peer Evaluation",
-    description: "A open source web design with Ruby on Rails for teachers and students to ensure quality collaborative work among peers.",
+    description:
+      "A open source web design with Ruby on Rails for teachers and students to ensure quality collaborative work among peers.",
     image: "/assets/3.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/CztCFfSNI/Voyage-zitao",
@@ -36,7 +39,8 @@ const projectsData = [
   {
     id: 4,
     title: "Fitness Calendar",
-    description: "Designed to inspire and motivate users to achieve their fitness goals through our personalized training plans, progress tracking, and reminder functions.",
+    description:
+      "Designed to inspire and motivate users to achieve their fitness goals through our personalized training plans, progress tracking, and reminder functions.",
     image: "/assets/4.jpeg",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/CztCFfSNI/FitnessCalendar",
@@ -46,7 +50,8 @@ const projectsData = [
     id: 5,
     title: "Random Quote Generator",
     description: "A generator that can generate 50 quotes randomly.",
-    image: "https://cdn.glitch.global/94925d38-48db-4f75-b71d-8223b315b987/quote1.png?v=1695779890844",
+    image:
+      "https://cdn.glitch.global/94925d38-48db-4f75-b71d-8223b315b987/quote1.png?v=1695779890844",
     tag: ["All", "Game"],
     gitUrl: "#",
     previewUrl: "https://zitaocai-random-quotes-generator.glitch.me/",
@@ -77,10 +82,14 @@ const Project = () => {
 
   return (
     <section id="projects" className="py-12">
-      <h2 className={`text-center text-4xl font-bold ${classColor} mt-4 mb-8 md:mb-12`}>
+      <h2
+        className={`text-center text-4xl font-bold ${classColor} mt-4 mb-8 md:mb-12`}
+      >
         My Projects
       </h2>
-      <div className={`${classColor} flex flex-row justify-center items-center gap-2 py-6`}>
+      <div
+        className={`${classColor} flex flex-row justify-center items-center gap-2 py-6`}
+      >
         <ProjectTag
           onClick={handleTagChange}
           name="All"

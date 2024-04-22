@@ -14,29 +14,14 @@ import DarkMode from "./components/MainDark";
 import { useTheme } from "next-themes";
 
 const Home = () => {
-  const { theme } = useTheme(); 
-  
-  let backgroundStyle = theme === "dark" ? {
-    backgroundImage: "url('/assets/Header.jpg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center top",
-    backgroundRepeat: "no-repeat",
-  } : {
-    backgroundImage: "url('/assets/light.jpg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center top",
-    backgroundRepeat: "no-repeat",
-  };
+  const { theme } = useTheme();
 
   return (
-    <main className={`flex min-h-screen flex-col `} 
-    // style={backgroundStyle}
-    >
+    <main className={`flex min-h-screen flex-col `}>
       <Providers>
-       <div className="relative w-full">
+        <div className="relative w-full">
           <Navbar />
           <Main />
-          {/* {theme === "dark" ? <DarkMode /> : <LightMode />} */}
         </div>
       </Providers>
     </main>
