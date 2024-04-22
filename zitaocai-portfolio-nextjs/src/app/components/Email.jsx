@@ -7,6 +7,7 @@ import LinkedinIcon from "../../../public/assets/linkedin-icon.svg";
 import LinkedinIcon2 from "../../../public/assets/l-light.svg";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Email = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -52,9 +53,12 @@ const Email = () => {
       const bottonColor = theme === "dark" ? "bg-purple-700 hover:bg-purple-800 text-white" : "bg-slate-100 hover:bg-slate-200 text-purple-600"
 
   return (
-    <section
+    <motion.section // Replace section with motion.section
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      initial={{ opacity: 0, y: 20 }} // Set the initial state
+      animate={{ opacity: 1, y: 0 }} // Set the end state
+      transition={{ duration: 0.5 }} // Set the transition duration
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
@@ -148,7 +152,7 @@ const Email = () => {
           </form>
         )}
       </div>
-    </section>
+    </motion.section>
   );
 };
 
