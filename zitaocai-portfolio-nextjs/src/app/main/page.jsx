@@ -1,6 +1,6 @@
 "use client";
 import { Header, MainLight, MainDark } from "@/components";
-import Providers from "../../components/Providers";
+import Providers from "../../components/organisms/Providers";
 import { React, useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 

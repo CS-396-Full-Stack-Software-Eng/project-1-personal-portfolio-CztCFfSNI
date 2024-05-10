@@ -1,4 +1,4 @@
-import AboutTab from "../atoms/AboutTab";
+import { AboutTab } from "../atoms";
 
 const AboutTabBar = ({ handleTabChange, tab }) => {
   return (

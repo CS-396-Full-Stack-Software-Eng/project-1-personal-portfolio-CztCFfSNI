@@ -6,7 +6,7 @@ import GithubIcon2 from "../../../public/assets/g-light.svg";
 import LinkedinIcon from "../../../public/assets/linkedin-icon.svg";
 import LinkedinIcon2 from "../../../public/assets/l-light.svg";
 import { motion } from "framer-motion";
-import ContactInfo from "../molecules/ContactInfo";
+import { ContactInfo } from "../molecules";
 
 const Email = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);

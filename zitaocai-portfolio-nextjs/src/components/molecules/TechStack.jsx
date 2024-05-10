@@ -1,4 +1,4 @@
-import TechIcon from "../atoms/TechIcon";
+import { TechIcon } from "../atoms";
 
 const TechStack = ({ collabApps }) => {
   return (

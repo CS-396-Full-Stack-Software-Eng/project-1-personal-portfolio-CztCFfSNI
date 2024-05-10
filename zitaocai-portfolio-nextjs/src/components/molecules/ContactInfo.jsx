@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ContactLink from "../atoms/ContactLink";
+import { ContactLink } from "../atoms";
 
 const ContactInfo = ({ githubIcon, linkedInIcon, iconSize }) => {
   return (

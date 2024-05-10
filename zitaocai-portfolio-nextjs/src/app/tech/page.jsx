@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
-import Footer from "../../components/organizms/Footer";
+import Footer from "../../components/organisms/Footer";
 import Navbar from "../../components/molecules/Navbar";
-import Header from "../../components/organizms/Header";
+import Header from "../../components/organisms/Header";
 import Project from "../../components/molecules/Project";
-import Tech from "../../components/organizms/Tech";
-import Providers from "../../components/Providers";
+import Tech from "../../components/organisms/Tech";
+import Providers from "../../components/organisms/Providers";
 import { useTheme } from "next-themes";
 
 const Main = () => {

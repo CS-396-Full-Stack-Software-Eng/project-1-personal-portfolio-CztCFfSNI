@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import Footer from "../../components/organizms/Footer";
+import Footer from "../../components/organisms/Footer";
 import Navbar from "../../components/molecules/Navbar";
-import Header from "../../components/organizms/Header";
-import Providers from "../../components/Providers";
-import About from "../../components/organizms/About";
+import Header from "../../components/organisms/Header";
+import Providers from "../../components/organisms/Providers";
+import About from "../../components/organisms/About";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 

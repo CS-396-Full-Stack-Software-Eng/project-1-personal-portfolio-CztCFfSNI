@@ -1,4 +1,4 @@
-import NavLink from "../atoms/NavLink";
+import { NavLink } from "../atoms";
 import { useTheme } from "next-themes";
 import { FaMoon } from "react-icons/fa";
 import { BsSunFill } from "react-icons/bs";

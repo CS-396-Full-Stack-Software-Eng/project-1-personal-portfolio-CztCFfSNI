@@ -1,6 +1,6 @@
 "use client";
-import Header from "../components/organizms/Header";
-import Providers from "../components/Providers";
+import Header from "../components/organisms/Header";
+import Providers from "../components/organisms/Providers";
 import Main from "./main/page";
 import { useTheme } from "next-themes";
 

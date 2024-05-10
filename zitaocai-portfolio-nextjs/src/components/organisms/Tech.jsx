@@ -1,6 +1,6 @@
 import React from "react";
 import { useTheme } from "next-themes";
-import TechStack from '../molecules/TechStack';
+import { TechStack } from '../molecules';
 
 export const collabApps = [
   {

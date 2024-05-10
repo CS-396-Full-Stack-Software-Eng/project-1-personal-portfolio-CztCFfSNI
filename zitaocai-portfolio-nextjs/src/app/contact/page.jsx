@@ -1,8 +1,8 @@
 "use client";
-import Footer from "../../components/organizms/Footer";
-import Header from "../../components/organizms/Header";
-import Email from "../../components/organizms/Email";
-import Providers from "../../components/Providers";
+import Footer from "../../components/organisms/Footer";
+import Header from "../../components/organisms/Header";
+import Email from "../../components/organisms/Email";
+import Providers from "../../components/organisms/Providers";
 
 const Main = () => {
   return (

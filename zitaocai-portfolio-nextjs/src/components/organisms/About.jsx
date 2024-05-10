@@ -2,7 +2,7 @@ import React, { useTransition, useState } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import AboutTabBar from "../molecules/AboutTabBar";
+import { AboutTabBar } from "../molecules";
 
 const TAB_DATA = [
   {

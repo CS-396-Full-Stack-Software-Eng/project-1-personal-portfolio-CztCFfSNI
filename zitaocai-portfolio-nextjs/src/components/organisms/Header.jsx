@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import Navbar from "../molecules/Navbar"; 
-import Menu from "../molecules/Menu";
+import { Navbar, Menu } from "../molecules"; 
 
 const navLinks = [
   {
