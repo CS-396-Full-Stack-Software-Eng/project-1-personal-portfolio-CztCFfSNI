@@ -4,7 +4,7 @@ import Footer from "../components/organizms/Footer";
 import Navbar from "../components/molecules/Navbar";
 import Header from "../components/organizms/Header";
 import Providers from "../components/Providers";
-import About from "../components/About";
+import About from "../components/organizms/About";
 import LightMode from "../components/MainLight";
 import DarkMode from "../components/MainDark";
 import { React, useState, useEffect } from "react";

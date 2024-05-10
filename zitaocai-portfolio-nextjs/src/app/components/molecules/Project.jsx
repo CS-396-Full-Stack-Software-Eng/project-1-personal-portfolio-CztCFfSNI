@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useRef } from "react";
 import { useTheme } from "next-themes";
-import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
+import ProjectCard from "../atoms/ProjectCard";
+import ProjectTag from "../atoms/ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [

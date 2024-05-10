@@ -8,7 +8,7 @@ const variants = {
   active: { width: "calc(100% - 0.75rem)" },
 };
 
-const Tab = ({ active, selectTab, children }) => {
+const AboutTab = ({ active, selectTab, children }) => {
   const { theme, setTheme } = useTheme();
   const buttonClasses =
     theme === "dark"
@@ -38,4 +38,4 @@ const Tab = ({ active, selectTab, children }) => {
   );
 };
 
-export default Tab;
+export default AboutTab;

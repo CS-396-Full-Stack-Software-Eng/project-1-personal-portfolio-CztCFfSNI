@@ -3,7 +3,7 @@ import { useTheme } from "next-themes";
 import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Navbar from "../molecules/Navbar"; 
-import MenuOverlay from "../Menu";
+import Menu from "../molecules/Menu";
 
 const navLinks = [
   {
@@ -81,7 +81,7 @@ const Header = () => {
           <Navbar navLinks={navLinks} setTheme={setTheme} />
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen ? <Menu links={navLinks} /> : null}
     </nav>
   );
 };

@@ -1,10 +1,8 @@
-"use client";
 import React, { useTransition, useState } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import Tab from "./Tab";
-import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import AboutTabBar from "../molecules/AboutTabBar";
 
 const TAB_DATA = [
   {
@@ -135,30 +133,7 @@ const About = () => {
                 new pictures.
               </p>
               <div className="flex flex-row justify-start mt-8">
-                <Tab
-                  selectTab={() => handleTabChange("education")}
-                  active={tab === "education"}
-                >
-                  Education{" "}
-                </Tab>
-                <Tab
-                  selectTab={() => handleTabChange("courses")}
-                  active={tab === "courses"}
-                >
-                  Courses{" "}
-                </Tab>
-                <Tab
-                  selectTab={() => handleTabChange("research")}
-                  active={tab === "research"}
-                >
-                  Research{" "}
-                </Tab>
-                <Tab
-                  selectTab={() => handleTabChange("hobbies")}
-                  active={tab === "hobbies"}
-                >
-                  Hobbies{" "}
-                </Tab>
+                <AboutTabBar handleTabChange={handleTabChange} tab={tab} />
               </div>
               <div className="mt-4">
                 {TAB_DATA.find((t) => t.id === tab).content}

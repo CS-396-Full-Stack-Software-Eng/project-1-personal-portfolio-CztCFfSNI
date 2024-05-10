@@ -6,8 +6,7 @@ import { FiMoon } from "react-icons/fi";
 import { FaMoon } from "react-icons/fa";
 import { BsSun, BsSunFill } from "react-icons/bs";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import NavLink from "./atoms/NavLink";
-import MenuOverlay from "./Menu";
+import NavLink from "../atoms/NavLink";
 
 const Menu = ({ links }) => {
   const { theme, setTheme } = useTheme();
