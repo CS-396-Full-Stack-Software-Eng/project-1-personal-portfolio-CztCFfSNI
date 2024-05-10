@@ -1,12 +1,6 @@
 "use client";
-import Image from "next/image";
-import Footer from "../components/organizms/Footer";
-import Navbar from "../components/molecules/Navbar";
-import Header from "../components/organizms/Header";
-import Providers from "../components/Providers";
-import About from "../components/organizms/About";
-import LightMode from "../components/MainLight";
-import DarkMode from "../components/MainDark";
+import { Header, MainLight, MainDark } from "@/components";
+import Providers from "../../components/Providers";
 import { React, useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
@@ -38,7 +32,7 @@ const Main = () => {
       <Providers>
         <div className="relative w-full">
           <Header />
-          {theme === "dark" ? <DarkMode /> : <LightMode />}
+          {theme === "dark" ? <MainDark /> : <MainLight />}
         </div>
       </Providers>
     </main>

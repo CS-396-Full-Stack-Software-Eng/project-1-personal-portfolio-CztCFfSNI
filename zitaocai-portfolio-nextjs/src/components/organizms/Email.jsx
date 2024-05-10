@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import { useTheme } from "next-themes";
-import GithubIcon from "../../../../public/assets/github-icon.svg";
-import GithubIcon2 from "../../../../public/assets/g-light.svg";
-import LinkedinIcon from "../../../../public/assets/linkedin-icon.svg";
-import LinkedinIcon2 from "../../../../public/assets/l-light.svg";
+import GithubIcon from "../../../public/assets/github-icon.svg";
+import GithubIcon2 from "../../../public/assets/g-light.svg";
+import LinkedinIcon from "../../../public/assets/linkedin-icon.svg";
+import LinkedinIcon2 from "../../../public/assets/l-light.svg";
 import { motion } from "framer-motion";
 import ContactInfo from "../molecules/ContactInfo";
 

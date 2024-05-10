@@ -34,7 +34,7 @@ const ImageSequence = () => {
   );
 };
 
-const Header = () => {
+const MainLight = () => {
   const { theme, setTheme } = useTheme();
 
   const descriptionColor =
@@ -110,4 +110,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default MainLight;

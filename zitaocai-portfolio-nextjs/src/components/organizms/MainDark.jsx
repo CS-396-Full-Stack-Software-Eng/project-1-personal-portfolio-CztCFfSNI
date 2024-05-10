@@ -35,7 +35,7 @@ const ImageSequence = () => {
   );
 };
 
-const Header = () => {
+const MainDark = () => {
   const { theme, setTheme } = useTheme();
 
   const descriptionColor =
@@ -113,4 +113,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default MainDark;

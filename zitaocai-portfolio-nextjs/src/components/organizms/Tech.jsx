@@ -1,7 +1,6 @@
-"use client";
-import React, { useState, useRef } from "react";
+import React from "react";
 import { useTheme } from "next-themes";
-import { motion } from "framer-motion";
+import TechStack from '../molecules/TechStack';
 
 export const collabApps = [
   {
@@ -63,15 +62,12 @@ export const collabApps = [
 ];
 
 const Tech = () => {
-  const { theme, setTheme } = useTheme();
-
+  const { theme } = useTheme();
   const classColor = theme === "dark" ? "text-white" : "text-black";
 
   return (
-    <section id="tech" className={`px-4`}>
-      <h2
-        className={`text-center text-4xl font-bold ${classColor} mt-4 mb-8 md:mb-12`}
-      >
+    <section id="tech" className="px-4">
+      <h2 className={`text-center text-4xl font-bold ${classColor} mt-4 mb-8 md:mb-12`}>
         Tech Stack
       </h2>
       <div className="mx-auto xl:w-[38rem] mt-4">
@@ -88,32 +84,7 @@ const Tech = () => {
               </div>
             </div>
           </div>
-
-          <ul>
-            {collabApps.map((app, index) => (
-              <motion.img
-                key={app.id}
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`absolute w-12 h-12`}
-                style={{
-                  left: `calc(50% + ${
-                    Math.sin((index * 2 * Math.PI) / collabApps.length) * 150
-                  }px)`,
-                  top: `calc(50% - ${
-                    Math.cos((index * 2 * Math.PI) / collabApps.length) * 150
-                  }px)`,
-                  translateX: "-50%",
-                  translateY: "-50%",
-                }}
-                src={app.icon}
-                alt={app.title}
-                width={app.width}
-                height={app.height}
-              />
-            ))}
-          </ul>
+          <TechStack collabApps={collabApps} />
         </div>
       </div>
     </section>

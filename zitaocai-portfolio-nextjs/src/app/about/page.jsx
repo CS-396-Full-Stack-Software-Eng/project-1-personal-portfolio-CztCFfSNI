@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import Footer from "../components/organizms/Footer";
-import Navbar from "../components/molecules/Navbar";
-import Header from "../components/organizms/Header";
-import Providers from "../components/Providers";
-import About from "../components/organizms/About";
+import Footer from "../../components/organizms/Footer";
+import Navbar from "../../components/molecules/Navbar";
+import Header from "../../components/organizms/Header";
+import Providers from "../../components/Providers";
+import About from "../../components/organizms/About";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
@@ -35,7 +35,6 @@ const Main = () => {
         <div className="container mt-24 mx-auto px-12 py-4">
           <About />
         </div>
-
         <Footer />
       </Providers>
     </main>

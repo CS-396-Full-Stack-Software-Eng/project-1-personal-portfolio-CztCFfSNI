@@ -1,15 +1,10 @@
 "use client";
-import Image from "next/image";
-import Footer from "../components/organizms/Footer";
-import Navbar from "../components/molecules/Navbar";
-import Header from "../components/organizms/Header";
-import Email from "../components/organizms/Email";
-import Providers from "../components/Providers";
-import { useTheme } from "next-themes";
+import Footer from "../../components/organizms/Footer";
+import Header from "../../components/organizms/Header";
+import Email from "../../components/organizms/Email";
+import Providers from "../../components/Providers";
 
 const Main = () => {
-  // const { theme } = useTheme();
-
   return (
     <main className={`flex min-h-screen flex-col `}>
       <Providers>
