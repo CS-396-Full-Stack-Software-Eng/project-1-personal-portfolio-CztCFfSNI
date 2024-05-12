@@ -15,7 +15,7 @@ Web Preview: [Zitao Cai Portfolio](https://cztcffsni.github.io/NU-Portfolio-zita
 - **Structure:** Here is the structure in /app: <br>![Structure 3](./mini-design-doc-images/3.png) 
 
 #### Navigation
-- **Navbar:** Navigate to different pages via the Navbar. Click the logo at the top left to return to the main front page.
+- **Header:** Navigate to different pages via the Navbar. Click the logo at the top left to return to the main front page.
 - **Theme Toggle:** Change themes using the toggle at the top right corner.
 - **Main Page Button:** Click to view more information.
 
