@@ -11,7 +11,8 @@ Web Preview: [Zitao Cai Portfolio](https://cztcffsni.github.io/NU-Portfolio-zita
 - **Themes:** Two distinct themes are available.
 - **Pages:** Includes five distinct pages.
 - **Components:** Multiple tools and components are implemented in the components file. They can be called and used within the pages.
-- **Structure:** Here is the structure: ![Dark Mode](./mini-design-doc-images/1.png) 
+- **Architecture:** I use the the Atomic Design Methodology: <br>![Structure 1](./mini-design-doc-images/1.png) ![Structure 2](./mini-design-doc-images/2.png) 
+- **Structure:** Here is the structure in /app: <br>![Structure 3](./mini-design-doc-images/3.png) 
 
 #### Navigation
 - **Navbar:** Navigate to different pages via the Navbar. Click the logo at the top left to return to the main front page.
@@ -19,8 +20,8 @@ Web Preview: [Zitao Cai Portfolio](https://cztcffsni.github.io/NU-Portfolio-zita
 - **Main Page Button:** Click to view more information.
 
 #### Modes
-- **Dark Mode:** ![Dark Mode](./mini-design-doc-images/2.png) 
-- **Light Mode:** ![Dark Mode](./mini-design-doc-images/3.png) 
+- **Dark Mode:** ![Dark Mode](./mini-design-doc-images/4.png) 
+- **Light Mode:** ![Light Mode](./mini-design-doc-images/5.png) 
 
 ### Technical Problem Statement
 
@@ -39,6 +40,7 @@ Web Preview: [Zitao Cai Portfolio](https://cztcffsni.github.io/NU-Portfolio-zita
 4. **Tailwind CSS Rotation:**
    - **Initial Design:** Wanted eight images to circle around a center image in the skill/tech section.
    - **Issue:** The design was not implemented as planned.
+   - ![Tailwind CSS Rotation](./mini-design-doc-images/6.png) 
 
 ### Design Approach
 
