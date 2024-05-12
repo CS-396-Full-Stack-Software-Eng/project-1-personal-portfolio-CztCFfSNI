@@ -1,6 +1,6 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/HTz23s4q)
 
-Mini Design Doc: [Zitao Cai Portfolio's Mini Design Doc](https://docs.google.com/document/d/1Zn0-Pr0wi5Bllz5X7PDCx_5e11ovmi0s-nUUhwyNaQE/edit) (For full details, please click this link.)
+Mini Design Doc: [Zitao Cai Portfolio's Mini Design Doc](https://docs.google.com/document/d/1Zn0-Pr0wi5Bllz5X7PDCx_5e11ovmi0s-nUUhwyNaQE/edit) (For full details, please check this link.)
 
 ### Overview/Background
 
