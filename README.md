@@ -39,8 +39,7 @@ Web Preview: [Zitao Cai Portfolio](https://cztcffsni.github.io/NU-Portfolio-zita
 
 4. **Tailwind CSS Rotation:**
    - **Initial Design:** Wanted eight images to circle around a center image in the skill/tech section.
-   - **Issue:** The design was not implemented as planned.
-   - ![Tailwind CSS Rotation](./mini-design-doc-images/6.png) 
+   - **Issue:** The design was not implemented as planned. <br>![Tailwind CSS Rotation](./mini-design-doc-images/6.png) 
 
 ### Design Approach
 
