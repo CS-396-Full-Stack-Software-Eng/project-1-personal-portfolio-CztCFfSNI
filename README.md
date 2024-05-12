@@ -62,6 +62,7 @@ Web Preview: [Zitao Cai Portfolio](https://cztcffsni.github.io/NU-Portfolio-zita
 #### Which design patterns did you notice in your app?
 
 - **Module Design Pattern:** Utilized for component-based architecture, enhancing modularity and reuse.
+- **Strategy Pattern:** Implemented to allow dynamic theme switching across the portfolio.
 
 #### Challenges
 
