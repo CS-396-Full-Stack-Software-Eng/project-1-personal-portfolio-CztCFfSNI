@@ -45,23 +45,27 @@ Web Preview: [Zitao Cai Portfolio](https://cztcffsni.github.io/NU-Portfolio-zita
 ### Design Approach
 
 #### Why did you choose to separate out a specific section into a component?
-- **Reason for Separation:** Enhances clarity and reusability of components for similar requirements.
+- **Modularity and Independence:** Components allow each part to be tested and used independently, which simplifies maintenance and updating.
+- **Code Organization and Clarity:** A well-organized component structure improves code organization and clarity, making it easier to add new features without breaking existing functionality.
+- **Performance and User Experience:** Optimizes performance and enhances user experience by ensuring stable functionality across updates.
+- **Productivity:** Using the Atomic Design Methodology reduces development time and increases productivity through clear, systematic management of complex interfaces.
 
 #### Why did you keep a state within a component vs using dependency injection?
-- **Local State vs. Dependency Injection:** Local state management is utilized for simplicity in a straightforward portfolio project. Dependency injection considered for larger-scale state management across components.
+- **Simplicity in State Management:** For a simple portfolio project, keeping a state within a component reduces the complexity and overhead associated with tools like dependency injection.
+- **Component Self-Containment:** State maintained within a component simplifies updates and maintenance, allowing for more focused testing and quicker iterations.
+- **Clear Organizational Structure:** Internal state management promotes a clearer, more organized codebase.
 
 #### Which design patterns did you notice in your app?
-- **Module Design Pattern:** By default, the module design pattern is used for components.
-- **Structural Patterns:** Notably, the decorator pattern within the app structure.
+- **Module Design Pattern:** Utilized for component-based architecture, enhancing modularity and reuse.
 
 #### Challenges
-- **Resend:** Check the first one in the [Technical Problem Statement](#technical-problem-statement)
- section.
-- **GitHub Deployment::** Check the second one in the [Technical Problem Statement](#technical-problem-statement)
- section.
+- **Resend Domain:** Initially intended to use a Resend API for email sending, but due to backend issues, switched to a simpler `<Link mailto:...>` approach, bypassing backend dependencies.
+- **GitHub Deployment::** Check the second one in [Technical Problem Statement](#technical-problem-statement).
 
 #### CSR, SSR, or Hybrid
-- **Hybrid:** For most of my code, I use CSR, because this is a client-side project, and I use a lot of useState and useEffect. Also, because I called the back-end part such as API for the email requirement in the contact section, I also used a small part of SSR.
+- **Hybrid:**
+  - **CSR:** Used for most of the portfolio to enhance interactivity and responsiveness, where JavaScript runs in the user's browser to dynamically generate content.
+  - **SSR:** Employed for the email-sending feature on the contact page to handle server-side functionalities like mail delivery.
 
 #### Additional Tools
 - **AI Debugging:** Utilized ChatGPT for debugging purposes.
